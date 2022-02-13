@@ -20,5 +20,5 @@ i przejżyste sprawdzenie dostępnych pokoi oraz ich rezerwacje.
 ### WYMAGANIA NIEFUNKCJONALNE 
 
 - Aplikacja powinna być skalowana pod daną roździelczość (RWD)
-- Aplikacja powinna mieć czas wyświetlania poniżej 1.5 s
+- Aplikacja powinna mieć czas wyświetlania poniżej 2 sekund dla 80% zapytan
 - Aplikacja powinna być w stanie utrzymać ten czas przy jednoczesnej liczbie użytkowników: 20
