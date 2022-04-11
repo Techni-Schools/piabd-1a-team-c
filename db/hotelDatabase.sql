@@ -51,7 +51,7 @@ CREATE TABLE Hotel_Personel (
 	surname VARCHAR(50),
 	[role] VARCHAR(30),
 	reservation_id INT,
-	 CONSTRAINT fk_hotel_person_id FOREIGN KEY(reservation_id)
+	 CONSTRAINT fk_hotel_personel_id FOREIGN KEY(reservation_id)
 		REFERENCES Reservation(id),
 );
 
