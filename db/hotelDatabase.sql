@@ -69,7 +69,7 @@ CREATE TABLE Hotel_Personel (
 CREATE TABLE Room (
 	id INT IDENTITY(1,1),
 	room_number INT,
-	for_how_many_guests INT, 
+	for_how_many_guests SMALLINT, 
 	-- !change type 
 	room_availability_status VARCHAR(20) DEFAULT('NO'),	
 	-- !add CHECK with predefined values
