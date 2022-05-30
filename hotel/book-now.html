@@ -20,9 +20,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>>
                         <li class="nav-item"><a class="nav-link" href="book-now.html">Book now</a></li>>
                         <!-- <select id="Login" onchange="login(this.value)">
                             <option value="1">Login as admin</option>
@@ -33,7 +33,7 @@
                             <button onclick="myFunction()" class="dropbtn">Login</button>
                             <div id="myDropdown" class="dropdown-content">
                               <a href="login(admin).html">Login as admin</a>
-                              <a href="login(frondesk).html">Login as front desk</a>
+                              <a href="login(reception).html">Login as reception</a>
                               <a href="login(cleaningService).html">Login as cleaning sevice</a>
                             </div>
                           </div>
@@ -44,63 +44,30 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="text-center my-5">
-                            <!--HEADER TEXT-->
-                            <h1 class="display-5 fw-bolder text-white mb-2">Contact with us</h1>
-                            <p class="lead text-white-50 mb-4">If you have problem with boocking or any other problem click Next...</p>
-                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Next</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Features section-->
-        <section class="py-5 border-bottom" id="features">
-            <div class="container px-5 my-5">
-                <div class="row-parent-div">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                            <h2 class="h4 fw-bolder">1. Call our secretary</h2>
-                            <p>+48 609 476 461</p>
-                            <a class="text-decoration-none" href="#!">
-                                <button onclick="copyText()" class="niepowiem">Copy</button>
-                                <script>
-                                    function copyText() {
-                                        navigator.clipboard.writeText
-                                            ("+48 609 476 461");
-                                    }
-                                </script>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                            <h2 class="h4 fw-bolder">2. DM us on FaceBook</h2>
-                            <p>Click to go to our FaceBook website</p>
-                        <a class="text-decoration-none" href="#!">
-                            <form action="https://www.facebook.com/Golden-Conquerors-Hotel-Resort-101821019210235/">
-                                <input type="submit" value="Click here" />
-                                </form>                            
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Pricing section-->
-        <section class="bg-light py-5 border-bottom">
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-        <!-- Testimonials section-->
+        <div class="calendar1">
+            <h1>Date</h1>
+            <label for="start">Since when:</label>
+            <input type="date" id="start">
 
-        <!-- Contact section-->
-        
+        </div>
+        <div class="calendar2">
+            <label for="start">Until when:</label>
+            <input type="date" id="end">
+            
+        </div>
+        <div class="guest">
+            <h1>How many Guests</h1>
+            <p>tell us, for how many guest you want book this room:</p>
+
+            <form>
+                <label for="quantity">number of guests:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="6">
+                </form> 
+        </div>  
+         
+      
         <!-- Footer-->
-        <footer class="py-5 bg-dark" style="position:absolute;bottom:0;width: 100%;margin-left: 0px;">
+        <footer class="py-5 bg-dark" style="position:absolute;bottom:0;width: 100%;">
             <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy;Golden Conquerors Hotel</p></div>
         </footer>
         <!-- Bootstrap core JS-->

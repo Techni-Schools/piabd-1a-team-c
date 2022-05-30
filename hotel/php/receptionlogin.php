@@ -3,7 +3,7 @@
 session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+if(isset($_SESSION["loggedinreception"]) && $_SESSION["loggedinreception"] === true){
     header("location: ./reception/receptionpanel.php");
     exit;
 }
@@ -59,7 +59,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             session_start();
                             
                             // Store data in session variables
-                            $_SESSION["loggedin"] = true;
+                            $_SESSION["loggedinreception"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;                            
                             

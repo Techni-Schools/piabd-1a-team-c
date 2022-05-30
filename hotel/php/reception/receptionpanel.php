@@ -3,7 +3,7 @@
 session_start();
  
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if(!isset($_SESSION["loggedinreception"]) || $_SESSION["loggedinreception"] !== true){
     header("location: ../receptionlogin.php");
     exit;
 }
@@ -23,6 +23,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <h1 style="color: white;" class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our reception panel.</h1>
     <p>
         <a href="../logout.php" class="btn btn-outline-light">Sign Out of Your Account</a>
+        <a href="./reservationpanel/index.php" class="btn btn-outline-light">Reservation Panel</a>
     </p>
 </body>
 </html>
