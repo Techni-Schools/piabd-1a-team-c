@@ -17,7 +17,7 @@ if(!isset($_SESSION["loggedinreception"]) || $_SESSION["loggedinreception"] !== 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation</title>
 </head>
-<body>
+<body> 
 <div class="container">
 	<div class="row">
 			<h1>Reservation</h1>
@@ -52,6 +52,18 @@ if(!isset($_SESSION["loggedinreception"]) || $_SESSION["loggedinreception"] !== 
                         <label>Phone Number</label> 
                     </div>
                 </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:left;">
+                        <input type="date" name="date_in" required />
+                        <label style="top: -5px; font-size: 0.75em;">Date in</label> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:right;">
+                        <input type="date" name="date_out" required />
+                        <label style="top: -5px; font-size: 0.75em;">Date out</label> 
+                    </div>
+                </div>
                 <div class="col-xs-12">
                     <div class="styled-input wide">
                         <input type="date" name="date_of_birth" required />
@@ -82,7 +94,7 @@ if(!isset($_SESSION["loggedinreception"]) || $_SESSION["loggedinreception"] !== 
 <style>
 body {
     background-color: #444442;
-    padding-top: 85px;
+    /* padding-top: 85px; */
 }
 
 h1 {

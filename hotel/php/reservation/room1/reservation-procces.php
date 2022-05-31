@@ -20,9 +20,11 @@ if(isset($_POST['submit']))
 	 $phone_number = $_POST['phone_number'];
      $payment_method = $_POST['payment_method'];
      $date_of_birth = $_POST['date_of_birth'];
-     $message = $_POST['message'];
-	 $sql = "INSERT INTO person (name,surname,phone_number,email_address,date_of_birth,payment_method,message,number_room)
-	 VALUES ('$name','$surname','$phone_number','$email','$date_of_birth','$payment_method','$message','1')";
+     $date_in = $_POST['date_in'];
+	 $date_out = $_POST['date_out'];
+	 $message = $_POST['message'];
+	 $sql = "INSERT INTO reservation (name,surname,phone_number,email_address,date_of_birth,payment_method,message,date_in,date_out,number_of_guests,number_room)
+	 VALUES ('$name','$surname','$phone_number','$email','$date_of_birth','$payment_method','$message','$date_in','$date_out','4','1')";
 	 if (mysqli_query($conn, $sql)) {
 		echo "New record created successfully !";
 	 } else {

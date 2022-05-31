@@ -25,6 +25,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <a href="newaccountslist.php" class="btn btn-outline-light">Create New Account</a>
         <a href="logout.php" class="btn btn-outline-light">Sign Out of Your Account</a>
         <a href="/php/userdel/delaccountslist.php" class="btn btn-outline-light">Delete Accounts</a>
+        <a href="/php/reservationpaneladmin/index.php" class="btn btn-outline-light">Reservations Lists</a>
     </p>
 </body>
 </html>

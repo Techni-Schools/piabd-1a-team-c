@@ -3,7 +3,7 @@
 session_start();
  
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedinreception"]) || $_SESSION["loggedinreception"] !== true){
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: ../receptionlogin.php");
     exit;
 }
@@ -38,7 +38,6 @@ if(!isset($_SESSION["loggedinreception"]) || $_SESSION["loggedinreception"] !== 
            <th>Confirm Reservation</th>
            <th>Confirm By</th>
            <th>Delete Reservation</th>
-           <th>Confirm Reservation</th>
       </tr>  
       <?php   
       $i=1;  
@@ -58,7 +57,6 @@ if(!isset($_SESSION["loggedinreception"]) || $_SESSION["loggedinreception"] !== 
                               <td>".$result['confirm_reservation']."</td>
                               <td>".$result['confirm_by']."</td>
                               <td><a href='delete.php?name=".$result['name']."' id='btn'>Delete</a></td>
-                              <td><a href='confirm.php?name=".$result['name']."' class='btnconfirm'>Confirm</a></td>
                           </tr>  
                      ";  
                 }  
