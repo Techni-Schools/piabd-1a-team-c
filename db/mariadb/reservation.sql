@@ -44,14 +44,7 @@ CREATE TABLE `reservation` (
   `confirm_by` varchar(30) NOT NULL DEFAULT '-'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `reservation`
---
 
-INSERT INTO `reservation` (`name`, `surname`, `phone_number`, `email_address`, `date_of_birth`, `payment_method`, `message`, `date_in`, `date_out`, `number_of_guests`, `number_room`, `confirm_reservation`, `confirm_by`) VALUES
-('fddfdf', 'fdfddf', 'fddffd', 'fdfd@fdfd', '2022-05-05', 'credit card', 'dffdfd', '2022-05-12', '2022-05-12', 4, 0, 'YES', 'ok1234'),
-('dfdfdf', 'fdfdf', 'dffddf', 'fddf@fdfd', '2022-05-06', 'cash', 'dffddf', '2022-05-05', '2022-05-19', 4, 1, 'YES', 'ok1234');
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
