@@ -15,7 +15,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <div class="buttons">
     <span><a href="registeradmin.php"></a></span>
     <span><a2 onclick="location.href='./reception/registerreception.php'"></a2></span>
-    <span><a3 href="#"></a3></span>
+    <span><a3 onclick="location.href='./cleaning/registercleaning.php'"></a3></span>
     </div>
   </body>
 

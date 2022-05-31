@@ -1,77 +1,44 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedincleaning"]) || $_SESSION["loggedincleaning"] !== true){
+    header("location: ../cleaninglogin.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation</title>
+    <title>Clean Serivce</title>
 </head>
 <body> 
 <div class="container">
 	<div class="row">
-			<h1>Reservation</h1>
+			<h1>Clean Serivce</h1>
 	</div>
-	<div class="row">
+	<!-- <div class="row">
 			<h4 style="text-align:center">Insert your personal information!</h4>
-	</div>
+	</div> -->
 
-    <form method="post" action="reservation-procces.php">
+    <form method="post" action="cleaning-procces.php">
         <div class="row input-container">
-        <div class="col-md-6 col-sm-12">
-                    <div class="styled-input">
-                        <input type="text" name="name" required />
-                        <label>First Name</label> 
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="styled-input" style="float:right;">
-                        <input type="text" name="surname" required />
-                        <label>Surname</label> 
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="styled-input">
-                        <input type="email" name="email" required/>
-                        <label>Email</label> 
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="styled-input" style="float:right;">
-                        <input type="text" name="phone_number" required/>
-                        <label>Phone Number</label> 
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="styled-input" style="float:left;">
-                        <input type="date" name="date_in" required />
-                        <label style="top: -5px; font-size: 0.75em;">Date in</label> 
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="styled-input" style="float:right;">
-                        <input type="date" name="date_out" required />
-                        <label style="top: -5px; font-size: 0.75em;">Date out</label> 
-                    </div>
-                </div>
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <input type="date" name="date_of_birth" required />
-                        <label style="top: -5px; font-size: 0.75em;">Date of birth</label> 
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <div class="styled-input wide">
-                    <input type="text" name="message"></input>
-                        <label>Message (Optional, max 200 characters)</label>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <div class="styled-input wide">
-                    <select id="payment_method" name="payment_method">
-                        <option value="credit card">Credit Card</option>
-                        <option value="cash">Cash</option>
+                    <select id="room_number" name="room_number">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
-                        <label style="top: -5px; font-size: 0.75em;">Payment method</label> 
+                        <label style="top: -5px; font-size: 0.75em;">Number Room</label> 
                     </div>
                 </div>
                 <div class="col-xs-12">

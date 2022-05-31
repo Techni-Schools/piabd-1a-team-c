@@ -1,16 +1,4 @@
 <?php
-// Initialize the session
-session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedinreception"]) || $_SESSION["loggedinreception"] !== true){
-    header("location: ../receptionlogin.php");
-    exit;
-}
-?>
-
-
-<?php
 include_once 'database.php';
 if(isset($_POST['submit']))
 {	 

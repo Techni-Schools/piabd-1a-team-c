@@ -12,7 +12,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <?php   
  include 'connection.php';  
- $query = "select * from receptionaccount";  
+ $query = "select * from cleaningaccount";  
  $run = mysqli_query($conn,$query);  
  ?>  
  <!DOCTYPE html>  
@@ -24,7 +24,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
  </head>  
  <body>  
  <header></header>  
- <center><h1 style="color:white;">Delete Reception Accounts</h1></center>
+ <center><h1 style="color:white;">Delete Cleaning Service Accounts</h1></center>
  <table border="1" cellspacing="0" cellpadding="0">  
       <tr class="heading">  
            <th>Number</th>  
@@ -45,7 +45,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                <td>".$result['username']."</td>  
                                <td>".$result['password']."</td>  
                                <td>".$result['created_at']."</td>  
-                               <td><a href='deletereception.php?id=".$result['id']."' id='btn'>Delete</a></td>  
+                               <td><a href='deletecleaning.php?id=".$result['id']."' id='btn'>Delete</a></td>  
                           </tr>  
                      ";  
                 }  

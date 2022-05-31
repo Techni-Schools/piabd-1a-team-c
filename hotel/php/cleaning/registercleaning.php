@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $username_err = "Username can only contain letters, numbers, and underscores.";
     } else{
         // Prepare a select statement
-        $sql = "SELECT id FROM receptionaccount WHERE username = ?";
+        $sql = "SELECT id FROM cleaningaccount WHERE username = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -78,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO receptionaccount (username, password) VALUES (?, ?)";
+        $sql = "INSERT INTO cleaningaccount (username, password) VALUES (?, ?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -91,7 +91,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-                header("location: ../receptionlogin.php");
+                header("location: ../cleaninglogin.php");
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
@@ -110,7 +110,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Create Reception Account</title>
+    <title>Create Cleaning Service Account</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body{ font: 14px sans-serif; background-color:#28282B;}
@@ -119,7 +119,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="wrapper">
-        <h2 style="color: white;">Create Reception Account</h2>
+        <h2 style="color: white;">Create Clean Service Account</h2>
         <p style="color: white;">Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
