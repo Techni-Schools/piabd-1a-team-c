@@ -22,9 +22,6 @@ if(!isset($_SESSION["loggedincleaning"]) || $_SESSION["loggedincleaning"] !== tr
 	<div class="row">
 			<h1>Clean Serivce</h1>
 	</div>
-	<!-- <div class="row">
-			<h4 style="text-align:center">Insert your personal information!</h4>
-	</div> -->
 
     <form method="post" action="cleaning-procces.php">
         <div class="row input-container">
@@ -52,7 +49,6 @@ body {
     background-color: #444442;
     /* padding-top: 85px; */
 }
-
 h1 {
     font-family: 'Poppins', sans-serif, 'arial';
     font-weight: 600;
@@ -60,7 +56,6 @@ h1 {
     color: white;
     text-align: center;
 }
-
 h4 {
     font-family: 'Roboto', sans-serif, 'arial';
     font-weight: 400;
@@ -78,7 +73,6 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
 }
-
 .styled-input {
     float: left;
     width: 293px;
@@ -86,13 +80,11 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     position: relative;
     border-radius: 4px;
 }
-
 @media only screen and (max-width: 768px){
     .styled-input {
         width:100%;
     }
 }
-
 .styled-input label {
     color: #999;
     padding: 1.3rem 30px 1rem 30px;
@@ -103,12 +95,10 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     transition: all 0.25s ease;
     pointer-events: none;
 }
-
 .styled-input.wide { 
     width: 650px;
     max-width: 100%;
 }
-
 input,
 textarea {
     padding: 30px;
@@ -119,28 +109,25 @@ textarea {
     color: white;
     border-radius: 4px;
 }
-
 input:focus,
-textarea:focus { outline: 0; }
-
+textarea:focus { 
+	outline: 0; 
+}
 input:focus ~ span,
 textarea:focus ~ span {
     width: 100%;
     -webkit-transition: all 0.075s ease;
     transition: all 0.075s ease;
 }
-
 textarea {
     width: 100%;
     min-height: 15em;
 }
-
 .input-container {
     width: 650px;
     max-width: 100%;
     margin: 20px auto 25px auto;
 }
-
 .submit-btn {
     float: right;
     padding: 7px 35px;
@@ -155,13 +142,11 @@ textarea {
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
 }
-
 .submit-btn:hover {
     transform: translateY(1px);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
               0 1px 1px 0 rgba(0,0,0,0.09);
 }
-
 @media (max-width: 768px) {
     .submit-btn {
         width:100%;
@@ -169,18 +154,15 @@ textarea {
         text-align:center;
     }
 }
-
 input[type=checkbox] + label {
   color: #ccc;
   font-style: italic;
 } 
-
 input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
 }    
 </style>
-
 <style>
     select:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 0.75em;
@@ -189,7 +171,6 @@ input[type=checkbox]:checked + label {
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
 }
-
 .styled-select {
     float: left;
     width: 293px;
@@ -197,13 +178,11 @@ input[type=checkbox]:checked + label {
     position: relative;
     border-radius: 4px;
 }
-
 @media only screen and (max-width: 768px){
     .styled-select {
         width:100%;
     }
 }
-
 .styled-select label {
     color: #999;
     padding: 1.3rem 30px 1rem 30px;
@@ -214,12 +193,10 @@ input[type=checkbox]:checked + label {
     transition: all 0.25s ease;
     pointer-events: none;
 }
-
 .styled-select.wide { 
     width: 650px;
     max-width: 100%;
 }
-
 select,
 textarea {
     padding: 30px;
@@ -230,28 +207,24 @@ textarea {
     color: white;
     border-radius: 4px;
 }
-
 select:focus,
-textarea:focus { outline: 0; }
-
+textarea:focus { outline: 0; 
+}
 select:focus ~ span,
 textarea:focus ~ span {
     width: 100%;
     -webkit-transition: all 0.075s ease;
     transition: all 0.075s ease;
 }
-
 textarea {
     width: 100%;
     min-height: 15em;
 }
-
 .select-container {
     width: 650px;
     max-width: 100%;
     margin: 20px auto 25px auto;
 }
-
 .submit-btn {
     float: right;
     padding: 7px 35px;
@@ -266,13 +239,11 @@ textarea {
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
 }
-
 .submit-btn:hover {
     transform: translateY(1px);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
               0 1px 1px 0 rgba(0,0,0,0.09);
 }
-
 @media (max-width: 768px) {
     .submit-btn {
         width:100%;
@@ -280,12 +251,10 @@ textarea {
         text-align:center;
     }
 }
-
 select[type=checkbox] + label {
   color: #ccc;
   font-style: italic;
 } 
-
 select[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
