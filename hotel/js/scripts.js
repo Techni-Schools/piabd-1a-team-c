@@ -1,17 +1,3 @@
-// function login(value)
-// {
-//     if( value == 1){
-//         window.location.href = "#1"
-//     }
-
-//     else if( value == 2) {
-//         window.location.href = "#2"
-//     }
-
-//     else if( value == 3) {
-//         window.location.href = "#3"
-//     }
-// }
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
