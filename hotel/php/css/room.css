@@ -1,0 +1,79 @@
+.dropbtn {
+    background-color: #495155;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  body,
+  html {
+    height: 100%;
+  }
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #5e6468;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .siema-nnn {
+    padding: 0;
+  }
+  .row {
+    width: 100%;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .photo img {
+    width: 50vh;
+    height: 50vh;
+  }
+  .container {
+    display: flex;
+  }
+  .container h1 {
+    color: white;
+    font-size: 20px;
+  }
+  .image-room {
+    height: 300px;
+  }
+  .col-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .siema-nnn h2 {
+    font-size: 15px;
+  }
+  .content-room {
+    padding-top: 40px;
+  }
+  .footer {
+    margin-top: 50px;
+    background-color: #212529;
+    padding: 40px;
+    text-align: center;
+    border-radius: 30px 30px 0 0;
+  }
+  .footer p {
+    color: white;
+  }
+  
