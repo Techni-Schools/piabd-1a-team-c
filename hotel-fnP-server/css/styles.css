@@ -1,0 +1,54 @@
+
+  .dropbtn {
+    background-color: #495155;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #5e6468;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .niepowiem {
+    border: none;
+    border:1px solid black;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .calendar1 {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+  .calendar2 {
+    text-align: left;
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+  .guest {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  .show {display:block;}

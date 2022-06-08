@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Golden Conquerors Hotel</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">   <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="./css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>>
+                        <li class="nav-item"><a class="nav-link" href="book-now.html">Book now</a></li>>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Login</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="login(admin).html">Login as admin</a>
+                              <a href="login(frondesk).html">Login as front desk</a>
+                              <a href="login(cleaningService).html">Login as cleaning sevice</a>
+                            </div>
+                          </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <!--HEADER TEXT-->
+                            <h1 class="display-5 fw-bolder text-white mb-2">Contact with us</h1>
+                            <p class="lead text-white-50 mb-4">If you have problem with boocking or any other problem click Next...</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="py-5 border-bottom" id="features">
+            <div class="container px-5 my-5">
+                <div class="row-parent-div">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0">
+                            <h2 class="h4 fw-bolder">1. Call our secretary</h2>
+                            <p>+48 609 476 461</p>
+                            <a class="text-decoration-none" href="#!">
+                                <button onclick="copyText()" class="niepowiem">Copy</button>
+                                <script>
+                                    function copyText() {
+                                        navigator.clipboard.writeText
+                                            ("+48 609 476 461");
+                                    }
+                                </script>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 mb-5 mb-lg-0">
+                            <h2 class="h4 fw-bolder">2. DM us on FaceBook</h2>
+                            <p>Click to go to our FaceBook website</p>
+                        <a class="text-decoration-none" href="#!">
+                            <form action="https://www.facebook.com/Golden-Conquerors-Hotel-Resort-101821019210235/">
+                                <input type="submit" value="Click here" />
+                                </form>                            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light py-5 border-bottom">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+        <!-- Footer-->
+        <footer class="py-5 bg-dark" style="position:absolute;bottom:0;width: 100%;margin-left: 0px;">
+            <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy;Golden Conquerors Hotel</p></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
